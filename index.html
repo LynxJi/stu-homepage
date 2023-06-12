@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/Logo.png" sizes="32x32">
+    <title>Saigon Technology University</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ </head>
+ <body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./img/logo1.png" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="text">
+                <h2>CHÀO MỪNG NGÀY KHAI GIẢNG</h2>
+                <p>Hội đông tuyển sinh Đại học Công Nghệ Sài Gòn thông báo thông báo dự kiến phương thức tuyển sinh đại học chính quy năm 2023 cho 7 chương trình đào tạo. Với tổng số chỉ tiêu dự kiến 1.500 sinh viên.</p>
+            </div>
+            <nav>
+                <ul class="danhSach">
+                    <li><a href="#"><i class='bx bx-search'></i></a></li>
+                    <li><a href="#"><i class='bx bx-home-alt-2'></i></a></li>
+                    <li><a href="#"><i class='bx bx-calendar-alt' ></i></a></li>
+                    <li><a href="#"><i class='bx bx-desktop'></i></a></li>
+                    <li><a href="#"><i class='bx bx-cloud-lightning'></i></a></li>
+                    <li><a href="#"><i class='bx bx-plus'></i></a></li>
+                  </ul>
+            </nav>
+            <div class="TimeNow">
+                <h4>Đếm ngược ngày khai giảng: </h2>
+                <div class="Time">
+                    <span id="days">Days</span>
+                    <h3>Ngày</h3>
+                </div>
+                <span class="dot">:</span>
+                <div class="Time">
+                    <span id="hours">Hours</span>
+                    <h3>Giờ</h3>
+                </div>
+                <span class="dot">:</span>
+                <div class="Time">
+                    <span id="minutes">Minutes</span>
+                    <h3>Phút</h3>
+                </div>
+                <span class="dot">:</span>
+                <div class="Time">
+                    <span id="seconds">Seconds</span>
+                    <h3>Giây</h3>
+                </div>
+              </div>
+              <div class="btn">
+                <button class="Nophoso">Nộp Hồ Sơ</button>
+                <button class="xettuyen">Phương thức</button>
+              </div>
+        </main>
+        <footer>
+            <div class="liveshow">
+                <img src="./img/LLL.jpg" alt="Ảnh 1">
+                <img src="./img/backgroundSTU.jpg" alt="Ảnh 2">
+                <img src="./img/NNN.jpg" alt="Ảnh 3">
+                <img src="./img/SS.jpg" alt="Ảnh 4">
+                <img src="./img/ilstu.jpg" alt="Ảnh 5">
+                <img src="./img/TTT.jpg" alt="Ảnh 6">
+                <img src="./img/SSS.jpg" alt="Ảnh 7">
+                <img src="./img/tv.jpg" alt="Ảnh 8">
+                <img src="./img/t5rr.jpg" alt="Ảnh 9">
+              </div>
+        </footer>
+        <div class="background"></div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+$('.liveshow').slick({
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+    </script>
+ </body>
+ </html>
