@@ -119,25 +119,32 @@ a:hover::after{
 .TimeNow{
     /* background-color: rgba(144, 238, 144, 0.692); */
     width: 55%;
-    display: flex;
+    display: inline-flex;
     justify-content: start;
-    margin-left: 5%;
-    padding: 10px 30px;
-    align-items: center;
+    margin: 2% 5%;
+    padding: 10px 15px;
+    /* align-items: center; */
     transform: scale(1);
     position: relative;
 }
 h4{
+    position: absolute;
     /* background-color: rgba(245, 245, 220, 0.557); */
-    width: 70%;
-    margin: -20px;
+    width: 30%;
+    top: -40%;
+    margin-bottom: 40%;
+    /* order: 1; */
     font-family: 'DT PhuDu';
+    display: block;
     font-size: 20px;
     font-weight: 500;
     color:white;
 }
 .Time{
+    /* position: absolute; */
+    bottom: 0;
     /* background-color: #ed1d2487; */
+    /* order: 2; */
     width: 20%;
     height: 50%;
     color: white; 
@@ -145,7 +152,8 @@ h4{
     margin: 0 30px;
     display: grid;
     place-items: center;
-    background-color: rgb(110, 122, 145);   
+    background-color:rgba(255, 255, 255, 0.558);   
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.807), transparent); */
 }
 .Time span{
     font-family: 'DM Sans', sans-serif;
@@ -162,9 +170,13 @@ h4{
     font-weight: 900;
  }
  h3{
-    font-family: 'DM Sans';
+    font-family: 'DT PhuDu';
    font-weight: 300;
    font-size: 20px;
+   color: transparent;
+   background-image: linear-gradient(to right, var(--color-blue),var(--color-red)) ;
+   -webkit-background-clip: text;
+   font-weight: 600;
  }
 .btn{
     /* background-color: rgba(127, 255, 212, 0.622); */
@@ -174,24 +186,52 @@ h4{
     display: flex;
     place-items: center;
     gap: 10%;
-    justify-content: center;
+    justify-content: start;
     transition: border .5s;
 }
-.btn button{
+.btn button.nophoso{
     width: 25%;
     height: 60%;
+    margin-left: 2%;
     border: none;
     border-radius: 10px;
-    background-color: rgb(110, 122, 145);
+    background-color:rgba(255, 255, 255, 0.342);
     color: white;
     font-family: 'Montserrat';
     font-weight: 700;
     transition: border .5s;
     cursor: pointer;
+    transition: background-image scale .5s;
 }
-.btn button:hover{
+.btn button.nophoso:hover{
     animation: changeColor 2s infinite;
-    transition-delay: 1.5s;
+     color: white;
+     transform: scale(1.2);
+}
+.btn button.xettuyen:hover{
+    border: none;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.342);
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    transition: border .5s;
+    cursor: pointer;
+    transform: scale(1);
+
+    transition: background-image scale .5s;
+}
+.btn button.xettuyen{
+    width: 25%;
+    height: 60%;
+    margin-left: 2%;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.342);
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    animation: changeColor 2s infinite;
+     transform: scale(1.2);
 }
 @keyframes changeColor {
     0%{
@@ -233,4 +273,125 @@ footer{
     transition: transform 0.3s ease;
     /* overflow: hidden; */
   }
+/* ipad */
+@media  screen and (max-width: 1024px){
+    header .logo{
+        margin-left: 10%;
+    }
+    .text{
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+    .text h2{
+        width: 65%;
+    }
+    .TimeNow{
+        position: relative;
+        left : 5%;
+        /* background-color: #ed1d24; */
+        display: flex;
+        justify-content: start;
+        width: 70%;
+    }
+    .TimeNow h4{
+        /* background-color: #2e3192; */
+        width: 60%;
+        position: absolute;
+    }
+    .TimeNow .Time{
+        /* background-color: aqua; */
+        width: 35%;
+    }
+    nav{
+        width: 7%;
+        margin-left: 2%;
+    }
+    .btn{
+        width: 60%;
+        padding-left: 7%;
+        display: flex;
+        justify-content: start;
+    }
+}
 
+/* phone */
+@media  screen and (max-width: 767px){
+    header .logo{
+        margin-left: 10%;
+
+    }
+    .logo img{
+        left: 25%;
+        position: relative;
+        width: 110%;
+    }
+    .text{
+        /* background-color: #2e3192; */
+        position: relative;
+        width: 80%;
+        left: 5%;
+    }
+    .text h2{
+        /* background-color: violet; */
+        width: 65%;
+        font-size: 135%;
+    }
+    .text p{
+        margin-top: 0;
+        /* background-color: aquamarine; */
+        font-size: 75%;
+    }
+    .TimeNow{
+        position: relative;
+        left : 5%;
+        /* background-color: #ed1d24; */
+        display: flex;
+        justify-content: start;
+        width: 70%;
+    }
+    .TimeNow h4{
+        /* background-color: #2e3132; */
+        width: 60%;
+        font-size: 85%;
+        top: -20%;
+        left: 5%;
+        position: absolute;
+    }
+    .TimeNow .Time{
+        /* background-color: aqua; */
+        width: 25%;
+        margin: 1%;
+    }
+    .dot{
+        position: relative;
+        top: 10px;
+    }
+    h3{
+        margin-top: -10%;
+    }
+    nav{
+        position: absolute;
+        top: -6%;
+        width: 7%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    nav ul li{
+        font-size: 20px ;
+    }
+    .btn{
+        /* background-color: black; */
+        width: 90%;
+        padding-left: 5%;
+        display: flex;
+        justify-content: start;
+    }
+    .btn button{
+        width: 30%;
+    }
+    footer{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
