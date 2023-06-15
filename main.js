@@ -66,7 +66,22 @@ setInterval(updateCountdown, 1000);
     }
   });
 
-
+  document.getElementById('next').onclick = function() {
+    let container = document.querySelector('.container');
+    container.classList.add('background-image-changed');
+  
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+  }
+  
+  document.getElementById('prev').onclick = function() {
+    let container = document.querySelector('.container');
+    container.classList.add('background-image-changed');
+  
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+  }
+  
   
   
 
